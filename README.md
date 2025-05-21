@@ -15,5 +15,25 @@
 ---
 
 ## 📂 ساختار پروژه:
+weather-web-app/
+├── index.html
+├── manifest.json
+├── service-worker.js
+├── icon-192.png
+└── icon-512.png
+
+---
+
+## 🛠️ روش اجرا:
+
+### اجرای لوکال:
+۱. نصب [Visual Studio Code](https://code.visualstudio.com/)  
+۲. نصب افزونه **Live Server**  
+۳. راست کلیک روی `index.html` و گزینه **Open with Live Server**
+
+یا:
+
+```bash
+npx serve .
 
 "Progressive Web App for weather forecast based on IoT data"
