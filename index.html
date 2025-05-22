@@ -41,6 +41,7 @@
       --border-radius: 12px;
       --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
       --transition: all 0.3s ease;
+      --sun-times-bg: linear-gradient(135deg, #f5f7fa, #e4e8eb);
     }
   
 
@@ -227,7 +228,7 @@
     .sun-times {
       display: flex;
       justify-content: space-around;
-      background: linear-gradient(135deg, #f5f7fa, #e4e8eb);
+      background: var(--sun-times-bg);
       padding: 15px;
       border-radius: var(--border-radius);
     }
@@ -415,6 +416,7 @@
       --text-color: #ecf0f1;
       --card-bg: #2f3640;
       --light-color: #3b3b3b;
+      --sun-times-bg: linear-gradient(135deg, #2f3640, #3b3b3b);
     }
 
     html, body {
