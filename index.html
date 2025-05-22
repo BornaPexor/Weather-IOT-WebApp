@@ -638,6 +638,30 @@
   
       // رسم نمودار دما
       function renderTemperatureChart(hourly) {
+        const textColor = getComputedStyle(document.documentElement).getPropertyValue('--text-color');
+
+options: {
+  plugins: {
+    legend: {
+      labels: {
+        color: textColor
+      }
+    }
+  },
+  scales: {
+    y: {
+      ticks: {
+        color: textColor
+      }
+    },
+    x: {
+      ticks: {
+        color: textColor
+      }
+    }
+  }
+}
+
         const ctx = document.getElementById('temperatureChart').getContext('2d');
         new Chart(ctx, {
           type: 'line',
