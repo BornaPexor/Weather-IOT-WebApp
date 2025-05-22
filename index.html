@@ -52,9 +52,26 @@
       --transition: all 0.3s ease;
       --sun-times-bg: linear-gradient(135deg, #f5f7fa, #e4e8eb);
     }
-  .forecast-item, .forecast-title, .hourly-forecast, .weekly-forecast, .chart-title {
+
+[data-theme="dark"] .tab-content,
+[data-theme="dark"] .tab-btn,
+[data-theme="dark"] .hourly-item,
+[data-theme="dark"] .daily-item,
+[data-theme="dark"] canvas {
+  background-color: var(--card-bg);
   color: var(--text-color);
 }
+
+
+[data-theme="dark"] .tab-content h1,
+[data-theme="dark"] .tab-content h3,
+[data-theme="dark"] .tab-content p,
+[data-theme="dark"] .tab-content div,
+[data-theme="dark"] .hourly-item div,
+[data-theme="dark"] .daily-item div {
+  color: var(--text-color);
+}
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -423,7 +440,7 @@
 
     [data-theme="dark"] {
       --bg-color: #1e272e;
-      --text-color: #f1f1f1;
+      --text-color: #ecf0f1;
       --card-bg: #2f3640;
       --light-color: #3b3b3b;
       --sun-times-bg: linear-gradient(135deg, #2f3640, #3b3b3b);
