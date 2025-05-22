@@ -52,8 +52,9 @@
       --transition: all 0.3s ease;
       --sun-times-bg: linear-gradient(135deg, #f5f7fa, #e4e8eb);
     }
-  
-
+  .forecast-item, .forecast-title, .hourly-forecast, .weekly-forecast, .chart-title {
+  color: var(--text-color);
+}
     * {
       box-sizing: border-box;
       margin: 0;
@@ -422,7 +423,7 @@
 
     [data-theme="dark"] {
       --bg-color: #1e272e;
-      --text-color: #ecf0f1;
+      --text-color: #f1f1f1;
       --card-bg: #2f3640;
       --light-color: #3b3b3b;
       --sun-times-bg: linear-gradient(135deg, #2f3640, #3b3b3b);
